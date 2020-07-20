@@ -49,12 +49,15 @@ export const shoppincgCartLogic = event => {
 };
 
 const borrarElemento = event => { 
-    
-    console.log("hola");    
+     
+    /* Encuentra el indice del objeto clickeado en el array de objetos original de productos.
+    Para despues copiar ese objeto en un nuevo array de cosas compradas y en el array que se usa
+    para dibujar el template en el HTML */
     let nameProduct = event.target.parentNode.childNodes[3].innerHTML;
 
     let indexObject = context2.values2.findIndex(element => element.productName == nameProduct);
 
+    /*Elimina el objeto que esta en el index obtenido de la función anterior*/
     shopCartArr.splice(indexObject,1);
     context2.values2.splice(indexObject,1);
 
