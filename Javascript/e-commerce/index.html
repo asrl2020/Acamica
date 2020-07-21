@@ -15,7 +15,7 @@
         {{#each values}}
         <div id="product-card-id" class="product-card">
             <figure>
-                <img src="{{srcImg}}" alt="product image" id="price-id">
+                <img class="imagen-producto" src="{{srcImg}}" alt="product image" id="price-id">
             </figure>
             <p id="product-name-id" class="product-name">{{productName}}</p>
             <p id="product-price-id" class="product-price">$ {{productPrice}}</p>
@@ -48,6 +48,7 @@
             <img src="images/shopping-cart.png" alt="shopping car icon" id="shop-car">
         </figure>
         <span id="products-counter">0</span>
+        <span id="titulo-web">ARTESANÍAS MEXICANAS</span>
 
         <section id="shop-list">
             <section id="client-product-list">
@@ -65,8 +66,8 @@
         </section>
     </section>
 
-    <button id="prevBtn">Prev</button>
-    <button id="nextBtn">Next</button>
+    <button id="prevBtn" class="moveBtn"><img src="https://image.flaticon.com/icons/svg/959/959160.svg" style="width:30px"></button>
+    <button id="nextBtn" class="moveBtn"><img src="https://image.flaticon.com/icons/svg/959/959158.svg" style="width:30px"></button>
 
     
 
